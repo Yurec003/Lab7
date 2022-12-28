@@ -2,8 +2,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
-import java.net.InetSocketAddress;
-import java.net.MalformedURLException;
 import java.net.Socket;
 import java.net.URL;
 import java.util.ArrayList;
@@ -13,7 +11,7 @@ import java.util.regex.Pattern;
 
 public class Crawler {
 
-    private  static Pattern urlPattern = Pattern.compile("<a href=\"(http://.*?)\".*?>");
+    private static Pattern urlPattern = Pattern.compile("<a href=\"(http://.*?)\".*?>");
     private PageLoader pageLoader;
 
     public Crawler(PageLoader pageLoader){
